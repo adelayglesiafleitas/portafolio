@@ -1,0 +1,32 @@
+:root {
+  /* Colores primarios */
+  --color-rosado: #ff7f96;
+  --color-violeta: #6a2081;
+  --color-azul: #009fd9;
+  --color-azuloscuro: #121375;
+  --color-verdeclaro: #71b45d;
+  --color-verdeoscuro: #00a338;
+  --color-marron: #b1501a;
+  --color-amarillooscuro: #fdbb33;
+  --color-amarillo: #edeb02;
+  --color-white: #eeeeee;
+
+  
+}
+.mouse-memoirs-regular {
+  font-family: "Mouse Memoirs", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+

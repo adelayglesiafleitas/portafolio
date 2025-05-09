@@ -1,0 +1,70 @@
+.hero {
+ /* margin-top: 1000px;*/
+  display: flex;
+  /*height: 100vh;*/
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px; /* Necesario para efecto 3D */
+  border: 12px solid var(--color-amarillooscuro);
+}
+
+.hero h1 {
+  text-align: center;
+  overflow: hidden;
+  font-size: 160px;
+  color: var(--color-amarillo);
+  -webkit-text-stroke: 1px var(--color-azuloscuro);
+  font-weight: bold; /* Efecto 3D rotatorio */
+  transform-style: preserve-3d;
+  animation: girarTarjeta 6s infinite alternate ease-in-out;
+}
+
+.hero img {
+  top: 197px;
+  right: 402px;
+  z-index: -1;
+  width: 100%;
+  max-width: 400px;
+  min-width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+  transform: rotate(-15deg);
+  animation: rotar 6s infinite linear;
+}
+
+@keyframes rotar {
+  0% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+.hero-text {
+  background-color: rgba(129, 129, 129, 0.08);
+  backdrop-filter: blur(2px); /* desenfoque del fondo */
+  -webkit-backdrop-filter: blur(10px);
+  -webkit-text-stroke: 1px var(--color-azuloscuro);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 50px var(--color-white), inset 0 0 50px var(--color-white);
+  text-align: center;
+}
+
+@keyframes girarTarjeta {
+  0% {
+    transform: rotateY(15deg);
+  }
+  100% {
+    transform: rotateY(-15deg);
+  }
+}
