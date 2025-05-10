@@ -1,12 +1,13 @@
 .hero {
- /* margin-top: 1000px;*/
+  /* margin-top: 1000px;*/
   display: flex;
   /*height: 100vh;*/
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  perspective: 1000px; /* Necesario para efecto 3D */
+  /*perspective: 1000px;  Necesario para efecto 3D */
   border: 12px solid var(--color-amarillooscuro);
+  margin-top: 60px;
 }
 
 .hero h1 {
