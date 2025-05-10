@@ -1,13 +1,26 @@
 import '../styles/About.css';
+import avatar from "../../public/avatar/_MG_9925.png";
 
 const About = () => {
   return (
     <div className="about">
-      <h2>About Me</h2>
-      <p>
-        I'm a passionate developer with a background in computer engineering and 3D animation.
-        I love building modern web applications and creating efficient user interfaces.
-      </p>
+      <div className="parent">
+        <div className="div1">
+          ABOUT ME</div>
+        <div className="div3">
+          4
+        </div>
+        <div className="div5">5</div>
+        <div className="div6"><div>
+          <picture>
+            <img src={avatar} alt="Avatar" className="avatar" />
+          </picture>
+        </div>
+          <div>
+            <button>CV</button>
+          </div></div>
+        <div className="div7">7</div>
+      </div>
     </div>
   );
 };
