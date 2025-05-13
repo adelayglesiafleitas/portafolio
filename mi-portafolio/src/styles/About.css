@@ -6,6 +6,22 @@
   height: 100vh;
   width: 100vw;
   border: 12px solid var(--color-amarillooscuro);
+  color: var(--color-amarillo);
+}
+.about h1 {
+  text-align: center;
+  overflow: hidden;
+  font-size: 160px;
+  color: var(--color-amarillo);
+  -webkit-text-stroke: 1px var(--color-azuloscuro);
+  font-weight: bold; /* Efecto 3D rotatorio */
+  transform-style: preserve-3d;
+}
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: var(--color-amarillo);
 }
 
 .parent {
@@ -13,6 +29,9 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 8px;
+}
+.margin {
+  margin: auto;
 }
 
 .div1 {
@@ -25,6 +44,7 @@
   grid-row: span 3 / span 3;
   grid-column-start: 1;
   grid-row-start: 3;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .div5 {
@@ -32,6 +52,7 @@
   grid-row: span 3 / span 3;
   grid-column-start: 3;
   grid-row-start: 3;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .div6 {
@@ -46,8 +67,72 @@
   grid-row: span 3 / span 3;
   grid-column-start: 5;
   grid-row-start: 3;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .avatar {
   width: 200px;
+}
+.cv-button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cv-button:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* fondo más transparente */
+  backdrop-filter: blur(8px); /* efecto de desenfoque */
+  -webkit-backdrop-filter: blur(8px); /* para compatibilidad en Safari */
+  border-radius: 10px; /* bordes redondeados */
+}
+.container-pict-cv {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  padding: 20px;
+}
+
+.div1,
+.div6 {
+  height: 230px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.div3,
+.div5,
+.div7 {
+  height: 500px;
+}
+
+.div3,
+.div5,
+.div7,
+.div1,
+.div6 {
+  background-color: rgba(0, 0, 0, 0.1); /* fondo más transparente */
+  backdrop-filter: blur(8px); /* efecto de desenfoque */
+  -webkit-backdrop-filter: blur(8px); /* para compatibilidad en Safari */
+  border-radius: 10px; /* bordes redondeados */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* borde sutil */
+  transition: all 0.3s ease; /* Transición suave para todos los cambios */
+  cursor: pointer;
+}
+
+.div3:hover,
+.div5:hover,
+.div7:hover,
+.div1:hover,
+.div6:hover {
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo más oscuro al pasar el mouse */
+  transform: scale(1.05); /* Escala ligeramente el tamaño del div */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Agrega una sombra para mayor énfasis */
 }

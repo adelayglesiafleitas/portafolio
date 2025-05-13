@@ -1,0 +1,21 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content h2,
+p {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+.content-text {
+  padding: 25px;
+}
+.content-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
