@@ -82,15 +82,6 @@ h2 {
   cursor: pointer;
 }
 
-.cv-button:hover {
-  background-color: rgba(0, 0, 0, 0.1); /* fondo más transparente */
-  backdrop-filter: blur(8px); /* efecto de desenfoque */
-  -webkit-backdrop-filter: blur(8px); /* para compatibilidad en Safari */
-  border-radius: 10px; /* bordes redondeados */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-  border-color: #fff;
-  z-index: 100;
-}
 .container-pict-cv {
   display: flex;
   flex-direction: row;

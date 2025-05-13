@@ -21,6 +21,7 @@
   border-radius: 10px; /* bordes redondeados */
   border: 1px solid rgba(255, 255, 255, 0.2); /* borde sutil */
   display: flex;
+  padding: 15px;
 }
 
 .skills-grid {
@@ -33,10 +34,11 @@
   -webkit-backdrop-filter: blur(8px); /* para compatibilidad en Safari */
   border-radius: 10px; /* bordes redondeados */
   padding: 15px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
-.skill-card {
+.skill-card,
+.skills-subtitle {
   background-color: rgba(255, 255, 255, 0.15);
   border-radius: 12px;
   padding: 0.6rem;
@@ -46,9 +48,15 @@
   border: 2px solid transparent;
   cursor: pointer;
 }
+.skills-subtitle {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
-.skill-card:hover {
+.skill-card:hover,
+.skills-subtitle:hover,
+.container-h1:hover {
   transform: translateY(-5px);
+  cursor: pointer;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
   border-color: #fff;
   background-color: rgba(0, 0, 0, 0.4); /* Fondo más oscuro al pasar el mouse */
@@ -65,4 +73,13 @@
   margin: 0;
   color: #fff;
   font-weight: 500;
+}
+.skills-columns {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.skills-column {
+  margin: 40px;
 }

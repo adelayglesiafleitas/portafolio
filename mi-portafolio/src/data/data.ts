@@ -29,19 +29,3 @@ export const more: Data = {
     "💬 I enjoy collaborating and teaching others — I’ve given animation classes to young students and shared my knowledge in various creative environments.",
   ],
 };
-
-/*export const skillsData = [
-  { name: "HTML", icon: "/icons/html.png" },
-  { name: "CSS", icon: "/icons/css.png" },
-  { name: "JavaScript", icon: "/icons/javascript.png" },
-  { name: "React", icon: "/icons/react.png" },
-  { name: "MUI", icon: "/icons/mui.png" },
-  { name: "Sass", icon: "/icons/sass.png" },
-  { name: "GitHub", icon: "/icons/github.png" },
-  { name: "Photoshop", icon: "/icons/photoshop.png" },
-  { name: "Figma", icon: "/icons/figma.png" },
-  { name: "Next.js", icon: "/icons/nextjs.png" },
-  { name: "TailwindCSS", icon: "/icons/tailwind.png" },
-  { name: "Node.js", icon: "/icons/node.png" },
-];
-*/

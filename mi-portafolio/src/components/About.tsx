@@ -22,7 +22,7 @@ const About = () => {
         </div>
         <div className="div6 margin">
           <div className='container-pict-cv margin'>
-            <div >
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
               <a href={CV} download className="cv-button"><h2>CV</h2></a>
             </div>
             <picture>
