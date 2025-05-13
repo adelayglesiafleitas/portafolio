@@ -5,10 +5,9 @@
   box-sizing: border-box;
   font-family: "Mouse Memoirs", sans-serif;
   font-size: 40px;
- /*color: var(--color-white);*/
+  /*color: var(--color-white);*/
 }
 body {
-
   /*fondo*/
   background-color: var(--color-fondo);
   background-image: url("../public/fondo_cielo/fondo_ciel3.jpg"); /* Agrega la ruta de la imagen */
@@ -27,4 +26,13 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
+}
+
+h2,
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: var(--color-amarillo);
+  -webkit-text-stroke: 1px var(--color-azuloscuro);
 }

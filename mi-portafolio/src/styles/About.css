@@ -7,6 +7,7 @@
   width: 100vw;
   border: 12px solid var(--color-amarillooscuro);
   color: var(--color-amarillo);
+  
 }
 .about h1 {
   text-align: center;
@@ -16,12 +17,7 @@
   -webkit-text-stroke: 1px var(--color-azuloscuro);
   font-weight: bold; /* Efecto 3D rotatorio */
   transform-style: preserve-3d;
-}
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-  color: var(--color-amarillo);
+  
 }
 
 .parent {

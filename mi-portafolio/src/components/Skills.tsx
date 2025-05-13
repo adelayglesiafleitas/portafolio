@@ -5,14 +5,14 @@ import {
 } from 'react-icons/fa';
 import {
     SiJavascript, SiTailwindcss, SiSass, SiAdobephotoshop,
-    SiBlender, SiAdobeaftereffects, SiAdobepremierepro, SiAdobeillustrator, SiAutodesk
+    SiAdobeaftereffects,
 } from 'react-icons/si';
 
 import '../styles/Skill.css';
 
 interface Skill {
     name: string;
-    icon: JSX.Element;
+    icon: React.ReactNode;
     category: 'frontend' | '3d';
 }
 
