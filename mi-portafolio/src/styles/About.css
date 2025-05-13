@@ -87,6 +87,9 @@ h2 {
   backdrop-filter: blur(8px); /* efecto de desenfoque */
   -webkit-backdrop-filter: blur(8px); /* para compatibilidad en Safari */
   border-radius: 10px; /* bordes redondeados */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+  z-index: 100;
 }
 .container-pict-cv {
   display: flex;
@@ -135,4 +138,7 @@ h2 {
   background-color: rgba(0, 0, 0, 0.4); /* Fondo más oscuro al pasar el mouse */
   transform: scale(1.05); /* Escala ligeramente el tamaño del div */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Agrega una sombra para mayor énfasis */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+  z-index: 100;
 }

@@ -1,6 +1,11 @@
 import "../styles/Content.css";
 
-function Content({ heading, paragraphs }: { heading: string, paragraphs: string[] }) {
+interface ContentProps {
+    heading: string;
+    paragraphs: string[];
+}
+
+function Content({ heading, paragraphs }: ContentProps) {
     return (
         <section className="content">
             <div className="content-text">

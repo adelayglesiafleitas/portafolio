@@ -2,6 +2,7 @@ import './styles/App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Skills from "./components/Skills";
 
 const App = () => {
   return (
@@ -12,8 +13,10 @@ const App = () => {
       </section>
       <section id="about">
         <About />
+        <section id="skills">
+          <Skills />
+        </section>
       </section>
-      {/* Aquí puedes seguir con Skills, Portfolio, Contact */}
     </div>
   );
 };
