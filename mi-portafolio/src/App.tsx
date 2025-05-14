@@ -10,19 +10,19 @@ const App = () => {
   return (
     <LanguageProvider> {/* Envolvemos la app con LanguageProvider */}
       <div className="App">
-        <Navbar />
-        <section id="home">
+        <header>
+          <Navbar />
+        </header>
+        <main> <section id="home">
           <Hero />
         </section>
-        <section id="about">
-          <About />
-          <section id="skills">
-            <Skills />
+          <section id="about">
+            <About />
+            <section id="skills">
+              <Skills />
+            </section>
           </section>
-          <section id="portfolio">
-            <Portafolio />
-          </section>
-        </section>
+        </main>
       </div>
     </LanguageProvider>
   );
