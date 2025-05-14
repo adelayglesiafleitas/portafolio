@@ -78,6 +78,7 @@
     flex-direction: column;
     height: auto;
     padding: 10px 0;
+    background-color: transparent; /* Fondo semitransparente */
   }
 
   .navbar-links {
@@ -117,6 +118,9 @@
     align-items: flex-start;
     height: 60px; /* mantenemos el alto original */
     padding: 0;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    box-shadow: none; /* Sin sombra en móvil */
   }
 
   .navbar-links {
