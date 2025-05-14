@@ -5,19 +5,18 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
-  border: 12px solid var(--color-amarillooscuro);
   color: var(--color-amarillo);
-  
+  padding: 30px;
 }
+
 .about h1 {
   text-align: center;
   overflow: hidden;
   font-size: 160px;
   color: var(--color-amarillo);
   -webkit-text-stroke: 1px var(--color-azuloscuro);
-  font-weight: bold; /* Efecto 3D rotatorio */
+  font-weight: bold;
   transform-style: preserve-3d;
-  
 }
 
 .parent {
@@ -26,6 +25,7 @@
   grid-template-rows: repeat(5, 1fr);
   gap: 8px;
 }
+
 .margin {
   margin: auto;
 }
@@ -69,6 +69,7 @@
 .avatar {
   width: 200px;
 }
+
 .cv-button {
   display: inline-block;
   padding: 0.5em 1em;
@@ -97,6 +98,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .div3,
 .div5,
 .div7 {
@@ -108,12 +110,12 @@
 .div7,
 .div1,
 .div6 {
-  background-color: rgba(0, 0, 0, 0.1); /* fondo más transparente */
-  backdrop-filter: blur(8px); /* efecto de desenfoque */
-  -webkit-backdrop-filter: blur(8px); /* para compatibilidad en Safari */
-  border-radius: 10px; /* bordes redondeados */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* borde sutil */
-  transition: all 0.3s ease; /* Transición suave para todos los cambios */
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
@@ -122,10 +124,40 @@
 .div7:hover,
 .div1:hover,
 .div6:hover {
-  background-color: rgba(0, 0, 0, 0.4); /* Fondo más oscuro al pasar el mouse */
-  transform: scale(1.05); /* Escala ligeramente el tamaño del div */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Agrega una sombra para mayor énfasis */
+  background-color: rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
   border-color: #fff;
   z-index: 100;
+}
+
+/* 🎯 Texto crece al hacer hover en el contenedor */
+.div1:hover h1,
+.div1:hover h2,
+.div1:hover h3,
+.div1:hover p,
+.div1:hover span,
+.div3:hover h1,
+.div3:hover h2,
+.div3:hover h3,
+.div3:hover p,
+.div3:hover span,
+.div5:hover h1,
+.div5:hover h2,
+.div5:hover h3,
+.div5:hover p,
+.div5:hover span,
+.div6:hover h1,
+.div6:hover h2,
+.div6:hover h3,
+.div6:hover p,
+.div6:hover span,
+.div7:hover h1,
+.div7:hover h2,
+.div7:hover h3,
+.div7:hover p,
+.div7:hover span {
+  transform: scale(1.09);
+  transition: transform 0.3s ease;
+  color: var(--color-white);
 }

@@ -45,7 +45,7 @@ function Skills() {
     return (
         <section className="skills-section">
             <div className="container-h1">
-                <h1>TECHNOLOGIES I AM FAMILIAR WITH</h1>
+                <h1>TECHNOLOGIES</h1>
             </div>
 
             <div className="skills-columns">

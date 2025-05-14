@@ -31,7 +31,6 @@ body {
 h2,
 h1 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
   line-height: 1.6;
   color: var(--color-amarillo);
   -webkit-text-stroke: 1px var(--color-azuloscuro);

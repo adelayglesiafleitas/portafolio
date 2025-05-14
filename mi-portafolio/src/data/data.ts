@@ -1,7 +1,15 @@
 interface Data {
   heading: string;
-  paragraphs: string[];
+  paragraphs?: string[];
+  name?: string;
+  subtitle?: string;
 }
+
+export const hero: Data = {
+  heading: "Hi, I'm",
+  name: "ALEJANDRO",
+  subtitle: "Frontend Developer & 3D Generalist",
+};
 
 export const about: Data = {
   heading: "WHO AM I?",

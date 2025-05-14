@@ -1,3 +1,4 @@
+/* Estilos generales de la navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -14,6 +15,16 @@
   ); /* Efecto de desenfoque para dar un estilo moderno */
 }
 
+.navbar-container {
+  display: flex;
+}
+
+.language-container {
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+}
+
 .navbar-links {
   display: flex;
   justify-content: space-around;
@@ -22,6 +33,7 @@
   padding: 0;
   margin: 0;
 }
+
 .navbar-links li a {
   text-decoration: none; /* Elimina el subrayado */
   color: inherit; /* Hereda el color del elemento padre (en este caso, el color de texto de la navbar) */
@@ -45,6 +57,22 @@
   transform: scale(1.1); /* Efecto de agrandar ligeramente al hacer hover */
 }
 
+/* Estilo para los elementos de idioma */
+.language-container h3 {
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-amarillo);
+}
+
+.language-container h3.active {
+  color: var(--color-principal); /* Resaltamos el idioma activo */
+  text-decoration: underline; /* Subrayamos el idioma activo */
+  font-size: 26px; /* Cambiamos ligeramente el tamaño para hacerlo más visible */
+}
+
+/* Responsividad */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
