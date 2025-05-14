@@ -1,3 +1,4 @@
+/* Estilos generales de la navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -14,6 +15,16 @@
   ); /* Efecto de desenfoque para dar un estilo moderno */
 }
 
+.navbar-container {
+  display: flex;
+}
+
+.language-container {
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+}
+
 .navbar-links {
   display: flex;
   justify-content: space-around;
@@ -22,6 +33,7 @@
   padding: 0;
   margin: 0;
 }
+
 .navbar-links li a {
   text-decoration: none; /* Elimina el subrayado */
   color: inherit; /* Hereda el color del elemento padre (en este caso, el color de texto de la navbar) */
@@ -45,6 +57,22 @@
   transform: scale(1.1); /* Efecto de agrandar ligeramente al hacer hover */
 }
 
+/* Estilo para los elementos de idioma */
+.language-container h3 {
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-amarillo);
+}
+
+.language-container h3.active {
+  color: var(--color-principal); /* Resaltamos el idioma activo */
+  text-decoration: underline; /* Subrayamos el idioma activo */
+  font-size: 26px; /* Cambiamos ligeramente el tamaño para hacerlo más visible */
+}
+
+/* Responsividad */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -59,5 +87,63 @@
 
   .navbar-links li {
     margin: 10px 0;
+  }
+}
+
+/* Botón hamburguesa */
+.menu-button {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 32px;
+  background-color: rgba(59, 58, 58, 0.5); /* Fondo semitransparente */
+  color: var(--color-amarillo);
+  padding: 8px 12px;
+  border-radius: 6px;
+  z-index: 1101;
+  cursor: pointer;
+  border: none;
+}
+
+/* Estilos móviles */
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 60px; /* mantenemos el alto original */
+    padding: 0;
+  }
+
+  .navbar-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(59, 58, 58, 0.5); /* Fondo semitransparente */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .navbar-links.open {
+    left: 0;
+  }
+
+  .navbar-links li {
+    margin: 20px 0;
+    font-size: 32px;
+  }
+
+  .language-container {
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
