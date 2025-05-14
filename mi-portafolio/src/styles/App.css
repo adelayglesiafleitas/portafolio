@@ -10,7 +10,7 @@
 body {
   /*fondo*/
   background-color: var(--color-fondo);
-  background-image: url("../public/fondo_cielo/fondo_ciel3.jpg"); /* Agrega la ruta de la imagen */
+  background-image: url("../../public/fondo_cielo/fondo_ciel3.jpg"); /* Agrega la ruta de la imagen */
   background-position: center center; /* Centra la imagen */
   background-attachment: fixed; /* Hace que la imagen no se mueva cuando haces scroll */
   background-size: 80%; /* Aumenta el tamaño de la imagen al 150% de su tamaño original */
