@@ -28,8 +28,7 @@ const Navbar = () => {
             <li><a href="#home" onClick={() => setIsOpen(false)}>Home</a></li>
             <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
             <li><a href="#skills" onClick={() => setIsOpen(false)}>Skills</a></li>
-            <li><a href="#portfolio" onClick={() => setIsOpen(false)}>Portfolio</a></li>
-            <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
+
 
             {/* Idioma dentro del menú en móvil */}
             <div className="language-container">
