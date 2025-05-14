@@ -10,4 +10,5 @@ export interface Content {
   about: Data;
   goals: Data;
   more: Data;
+  skill: Data;
 }

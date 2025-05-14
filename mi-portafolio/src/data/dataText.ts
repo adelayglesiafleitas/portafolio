@@ -33,6 +33,11 @@ export const content: Record<string, Content> = {
         "💬 I enjoy collaborating and teaching others — I’ve given animation classes to young students and shared my knowledge in various creative environments.",
       ],
     },
+    skill: {
+      heading: "TECHNOLOGIES!",
+      name: "Frontend Development",
+      subtitle: "3D / VFX / Animation",
+    },
   },
 
   es: {
@@ -66,6 +71,11 @@ export const content: Record<string, Content> = {
         "🧠 Soy una persona curiosa por naturaleza. Ya sea aprendiendo una nueva herramienta, mejorando mi inglés o estudiando diseño UX, siempre estoy buscando crecer.",
         "💬 Disfruto colaborar y enseñar a otros. He dado clases de animación a jóvenes y compartido mis conocimientos en diversos entornos creativos.",
       ],
+    },
+    skill: {
+      heading: "¡TECNOLOGÍAS!",
+      name: "Desarrollo Frontend",
+      subtitle: "3D / VFX / Animación",
     },
   },
 };

@@ -9,6 +9,7 @@ import {
 } from 'react-icons/si';
 
 import '../styles/Skill.css';
+import { useLanguage } from "../context/LanguageContext"; // Importamos el hook del contexto
 
 interface Skill {
     name: string;
@@ -39,19 +40,23 @@ const skills: Skill[] = [
 ];
 
 function Skills() {
+
+    const { translations } = useLanguage(); // Obtenemos las traducciones
+    const { skill } = translations; // Accedemos a las traducciones de "hero"
+
     const frontendSkills = skills.filter(skill => skill.category === 'frontend');
     const skills3D = skills.filter(skill => skill.category === '3d');
 
     return (
         <section className="skills-section">
             <div className="container-h1">
-                <h1>TECHNOLOGIES</h1>
+                <h1>{skill.heading}</h1>
             </div>
 
             <div className="skills-columns">
                 {/* Frontend */}
                 <div className="skills-column">
-                    <h2 className="skills-subtitle">Frontend Development</h2>
+                    <h2 className="skills-subtitle">{skill.name}</h2>
                     <div className="skills-grid">
                         {frontendSkills.map((skill, index) => (
                             <div className="skill-card" key={`frontend-${index}`}>
@@ -64,7 +69,7 @@ function Skills() {
 
                 {/* 3D / VFX */}
                 <div className="skills-column">
-                    <h2 className="skills-subtitle">3D / VFX / Motion Design</h2>
+                    <h2 className="skills-subtitle">{skill.subtitle}</h2>
                     <div className="skills-grid">
                         {skills3D.map((skill, index) => (
                             <div className="skill-card" key={`3d-${index}`}>

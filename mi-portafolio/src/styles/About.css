@@ -161,3 +161,70 @@
   transition: transform 0.3s ease;
   color: var(--color-white);
 }
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .about h1 {
+    font-size: 70px;
+  }
+
+  .parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Ordenar los divs */
+  .div1 {
+    order: 1;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .div6 {
+    order: 2;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .div3 {
+    order: 3;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .div5 {
+    order: 4;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .div7 {
+    order: 5;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .container-pict-cv {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .avatar {
+    width: 150px;
+  }
+
+  .cv-button {
+    padding: 0.4em 0.8em;
+    font-size: 14px;
+  }
+}
