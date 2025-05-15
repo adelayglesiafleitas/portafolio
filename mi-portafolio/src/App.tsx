@@ -1,15 +1,15 @@
 import './styles/App.css';
-import { LanguageProvider } from './context/LanguageContext'; // Importa el LanguageProvider
+import { LanguageProvider } from './context/LanguageContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from "./components/Skills";
-
+import Portfolio from "./components/Portafolio"; // 💡 nuevo import
 
 const App = () => {
   return (
-    <LanguageProvider> {/* Envolvemos la app con LanguageProvider */}
-      <div className="App">
+    <LanguageProvider>
+      <div className="App">    
         <Navbar />
         <main>
           <section id="home">
@@ -17,9 +17,12 @@ const App = () => {
           </section>
           <section id="about">
             <About />
-            <section id="skills">
-              <Skills />
-            </section>
+          </section>
+          <section id="skills">
+            <Skills />
+          </section>
+          <section id="portfolio"> {/* 💡 nueva sección */}
+            <Portfolio />
           </section>
         </main>
       </div>
