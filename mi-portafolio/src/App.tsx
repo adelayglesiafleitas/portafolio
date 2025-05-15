@@ -9,9 +9,7 @@ import Portfolio from "./components/Portafolio"; // 💡 nuevo import
 const App = () => {
   return (
     <LanguageProvider>
-      <div className="App">
-        <h1 className="text-3xl font-bold text-red-600">Hola Tailwind</h1>
-
+      <div className="App">    
         <Navbar />
         <main>
           <section id="home">
