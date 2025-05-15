@@ -1,4 +1,4 @@
-import type { Content } from "../types/types";
+import type { Content, PortfolioItem } from "../types/types";
 
 export const content: Record<string, Content> = {
   en: {
@@ -79,3 +79,47 @@ export const content: Record<string, Content> = {
     },
   },
 };
+
+export const portfolioData: PortfolioItem[] = [
+  // 🟨 PROYECTOS PRINCIPALES
+  {
+    title: "Drum Kit App",
+    url: "https://ejercicios-de-javascrit.vercel.app/",
+  },
+  {
+    title: "REMACHEstudio – Portal Web",
+    url: "https://www.remachestudio.com/",
+  },
+   {
+    title: "Idalo El Bar – Menú Interactivo",
+    url: "https://idalo-bar.vercel.app/",
+  },
+
+  // 🟩 FRONTEND MENTOR
+  {
+    title: "Todo App – React",
+    url: "https://todo-react-app-steel.vercel.app/",
+  },
+  {
+    title: "Rock Paper Scissors Game",
+    url: "https://rock-paper-scissors-master-nu-pearl.vercel.app/",
+  },
+  {
+    title: "Tip Calculator App",
+    url: "https://tip-calculator-app-main-react.vercel.app/",
+  },
+  {
+    title: "Advice Generator App",
+    url: "https://advice-generator-app-main-mu-cyan.vercel.app/",
+  },
+  {
+    title: "Interactive Rating Component",
+    url: "https://interactive-rating-component-main-react-omega.vercel.app/",
+  },
+
+  // 🟦 FREECODECAMP
+  {
+    title: "Random Quote Machine",
+    url: "https://random-quote-machine.vercel.app/", // actualiza si tienes la URL correcta
+  },
+];

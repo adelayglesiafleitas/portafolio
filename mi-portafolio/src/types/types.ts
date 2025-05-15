@@ -12,3 +12,8 @@ export interface Content {
   more: Data;
   skill: Data;
 }
+
+export interface PortfolioItem {
+  title: string;
+  url: string;
+}

@@ -1,0 +1,51 @@
+.portfolio {
+  padding: 60px 20px;
+  background-color: #0f0f0f;
+  color: var(--color-amarillo);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1); /* fondo más transparente */
+  backdrop-filter: blur(8px); /* efecto de desenfoque */
+}
+
+.portfolio h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.portfolio-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.03);
+  border-color: var(--color-white);
+}
+
+.iframe-container {
+  position: relative;
+  padding-top: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
