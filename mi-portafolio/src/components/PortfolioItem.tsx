@@ -1,6 +1,10 @@
 // components/PortfolioItem.jsx
 import { useState } from "react";
-const PortfolioItem = ({ title, url }) => {
+interface PortfolioItemProps {
+  title: string;
+  url: string;
+}
+const PortfolioItem: React.FC<PortfolioItemProps> = ({ title, url }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Función para alternar el estado
