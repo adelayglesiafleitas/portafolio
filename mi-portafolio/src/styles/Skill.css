@@ -99,6 +99,7 @@
 
 @media (max-width: 600px) {
   .skills-section {
+    margin: auto;
     padding: 20px;
     height: auto; /* Permite que crezca en altura en móviles */
   }

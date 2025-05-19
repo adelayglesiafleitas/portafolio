@@ -166,6 +166,7 @@
     flex-direction: column;
     height: auto;
     padding: 20px;
+    margin: auto;
   }
 
   .about h1 {

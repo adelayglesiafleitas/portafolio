@@ -17,3 +17,8 @@ export interface PortfolioItem {
   title: string;
   url: string;
 }
+export interface PortfolioItem {
+  title: string;
+  url: string;
+  technologies: string[];
+}

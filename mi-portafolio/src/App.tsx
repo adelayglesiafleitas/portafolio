@@ -21,7 +21,7 @@ const App = () => {
           <section id="skills">
             <Skills />
           </section>
-          <section id="portfolio"> {/* 💡 nueva sección */}
+          <section id="portfolio"> 
             <Portfolio />
           </section>
         </main>

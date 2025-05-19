@@ -11,12 +11,19 @@ const Portfolio = () => {
             <h1 style={{ cursor: "pointer" }}>
                 Mi Portafolio
             </h1>
-
-            {/* Si está abierto, muestra el grid con items */}
-            <var></var>
             <div className="portfolio-grid">
                 {portfolioData.map((item, index) => (
-                    <PortfolioItem key={index} {...item} />
+                    <div key={index}>
+                        <h2> {item.category}</h2>
+                        {item.projects.map((project, projectIndex) => (
+                            <PortfolioItem
+                                key={projectIndex}
+                                title={project.title}
+                                url={project.url}
+
+                            />
+                        ))}
+                    </div>
                 ))}
             </div>
 

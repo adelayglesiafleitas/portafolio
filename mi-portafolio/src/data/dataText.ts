@@ -79,7 +79,7 @@ export const content: Record<string, Content> = {
     },
   },
 };
-
+/*
 export const portfolioData: PortfolioItem[] = [
   // 🟨 PROYECTOS PRINCIPALES
   {
@@ -121,5 +121,88 @@ export const portfolioData: PortfolioItem[] = [
   {
     title: "Random Quote Machine",
     url: "https://random-quote-machine.vercel.app/", // actualiza si tienes la URL correcta
+  },
+];
+
+*/
+
+export const portfolioData: {
+  category: string;
+  projects: PortfolioItem[];
+}[] = [
+  // 🟨 PROYECTOS PROFESIONALES
+  {
+    category: "Proyectos Profesionales",
+    projects: [
+      {
+        title: "REMACHEstudio – Portal Web",
+        url: "https://www.remachestudio.com/",
+        technologies: ["React", "Vite", "Framer Motion", "CSS", "Lazy Loading"],
+      },
+      {
+        title: "Idalo El Bar – Menú Interactivo",
+        url: "https://idalo-bar.vercel.app/",
+        technologies: ["React", "Firebase", "Framer Motion", "Photoshop"],
+      },
+    ],
+  },
+
+  // 🟩 FRONTEND MENTOR
+  {
+    category: "Frontend Mentor",
+    projects: [
+      {
+        title: "Todo App – React",
+        url: "https://todo-react-app-steel.vercel.app/",
+        technologies: ["React", "TypeScript", "CSS"],
+      },
+      {
+        title: "Rock Paper Scissors Game",
+        url: "https://rock-paper-scissors-master-nu-pearl.vercel.app/",
+        technologies: ["React", "CSS", "Framer Motion"],
+      },
+      {
+        title: "Tip Calculator App",
+        url: "https://tip-calculator-app-main-react.vercel.app/",
+        technologies: ["React", "CSS", "JavaScript"],
+      },
+      {
+        title: "Advice Generator App",
+        url: "https://advice-generator-app-main-mu-cyan.vercel.app/",
+        technologies: ["React", "API", "CSS"],
+      },
+      {
+        title: "Interactive Rating Component",
+        url: "https://interactive-rating-component-main-react-omega.vercel.app/",
+        technologies: ["React", "CSS"],
+      },
+    ],
+  },
+
+  // 🟦 FREECODECAMP
+  {
+    category: "FreeCodeCamp",
+    projects: [
+      {
+        title: "Random Quote Machine – Generador de citas aleatorias",
+        url: "https://random-quote-machine.vercel.app/",
+        technologies: ["HTML", "CSS", "JavaScript", "React"],
+      },
+      {
+        title: "Markdown Previewer – Vista previa de Markdown",
+        url: "https://markdown-previewer.vercel.app/",
+        technologies: ["HTML", "CSS", "JavaScript", "React"],
+      },
+      {
+        title: "Drum Machine – Simulador de batería",
+        url: "https://drum-machine.vercel.app/",
+        technologies: ["HTML", "CSS", "JavaScript", "React"],
+      },
+      {
+        title: "JavaScript Calculator – Calculadora interactiva",
+        url: "https://js-calculator.vercel.app/",
+        technologies: ["HTML", "CSS", "JavaScript", "React"],
+      },
+    ],
   },
 ];
